@@ -8,7 +8,7 @@ export function createUI() {
     title: 'Kaleido Automation Bot',
   });
 
-  const headerText = figlet.textSync('Kaleido BOT', { font: 'Standard' });
+  const headerText = figlet.textSync('Kaleido BOT', { font: 'Doom' });
   const header = blessed.box({
     parent: screen,
     top: 0,
