@@ -1,4 +1,3 @@
-// ui.js
 import blessed from 'blessed';
 import figlet from 'figlet';
 import chalk from 'chalk';
@@ -9,7 +8,6 @@ export function createUI() {
     title: 'Kaleido Automation Bot',
   });
 
-  // Header dengan Figlet
   const headerText = figlet.textSync('Kaleido BOT', { font: 'Standard' });
   const header = blessed.box({
     parent: screen,
@@ -42,7 +40,6 @@ export function createUI() {
     },
   });
 
-  // Panel Status (kanan atas)
   const statusBox = blessed.box({
     parent: screen,
     top: '15%',
