@@ -166,14 +166,30 @@ function clearTransactionLogs() {
   addLog("Transaction logs cleared.", "success");
 }
 
+// HAPUS fungsi loadPrivateKeys yang lama, dan GANTI dengan yang ini:
+
 function loadPrivateKeys() {
   try {
-    const data = fs.readFileSync("pk.txt", "utf8");
-    privateKeys = data.split("\n").map(key => key.trim()).filter(key => key.match(/^(0x)?[0-9a-fA-F]{64}$/));
-    if (privateKeys.length === 0) throw new Error("No valid private keys in pk.txt");
-    addLog(`Loaded ${privateKeys.length} private keys from pk.txt`, "success");
+    // Ambil string private key dari file .env
+    const pkString = process.env.PRIVATE_KEYS;
+
+    if (!pkString) {
+      throw new Error("Variabel PRIVATE_KEYS tidak ditemukan di file .env");
+    }
+
+    // Pisahkan string menjadi array berdasarkan koma, lalu filter
+    privateKeys = pkString.split(',')
+      .map(key => key.trim())
+      .filter(key => key.match(/^(0x)?[0-9a-fA-F]{64}$/));
+
+    if (privateKeys.length === 0) {
+      throw new Error("Tidak ada private key yang valid di dalam variabel PRIVATE_KEYS.");
+    }
+
+    addLog(`Berhasil memuat ${privateKeys.length} private key dari file .env`, "success");
+
   } catch (error) {
-    addLog(`Failed to load private keys: ${error.message}`, "error");
+    addLog(`Gagal memuat private key: ${error.message}`, "error");
     privateKeys = [];
   }
 }
