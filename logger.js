@@ -1,11 +1,8 @@
-// logger.js
 import chalk from 'chalk';
 import fs from 'fs';
 
-// Nama file untuk menyimpan log
 const LOG_FILE = 'activity.log';
 
-// Hapus file log lama saat aplikasi dimulai agar log selalu baru
 try {
   fs.unlinkSync(LOG_FILE);
 } catch (error) {
@@ -15,7 +12,6 @@ try {
 // Stream untuk menulis log ke file secara efisien
 const logStream = fs.createWriteStream(LOG_FILE, { flags: 'a' });
 
-// Definisikan warna untuk setiap level log agar konsisten
 const logLevels = {
   error: { color: chalk.redBright, label: 'ERROR' },
   success: { color: chalk.greenBright, label: 'SUCCESS' },
