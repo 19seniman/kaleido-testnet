@@ -61,14 +61,14 @@ let activeProcesses = 0;
 
 let dailyActivityConfig = {
   depositRepetitions: 1,
-  minAmountDeposit: 0.1,
-  maxAmountDeposit: 0.5,
+  minAmountDeposit: 0.01,
+  maxAmountDeposit: 0.3,
   lendRepetitions: 1,
   minAmountLend: 0.1,
   maxAmountLend: 0.5,
   stakeRepetitions: 1,
-  minAmountStake: 10,
-  maxAmountStake: 50,
+  minAmountStake: 5,
+  maxAmountStake: 30,
   actionDelay: 10000,
   accountDelay: 10000,
   cycleIntervalHours: 1
