@@ -8,7 +8,7 @@ export function createUI() {
     title: 'Kaleido Testnet',
   });
 
-  const headerText = figlet.textSync('Kaleido Testnet', { font: 'Def Leppard' });
+  const headerText = figlet.textSync('Kaleido Testnet', { font: 'Big' });
   const header = blessed.box({
     parent: screen,
     top: 0,
