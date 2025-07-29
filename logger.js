@@ -6,10 +6,9 @@ const LOG_FILE = 'activity.log';
 try {
   fs.unlinkSync(LOG_FILE);
 } catch (error) {
-  // Abaikan jika file tidak ada
+ 
 }
 
-// Stream untuk menulis log ke file secara efisien
 const logStream = fs.createWriteStream(LOG_FILE, { flags: 'a' });
 
 const logLevels = {
