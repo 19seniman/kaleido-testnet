@@ -1,4 +1,5 @@
 import logger from "./logger.js"; 
+import { createUI } from './ui.js';
 import blessed from "blessed";
 import chalk from "chalk";
 import figlet from "figlet";
