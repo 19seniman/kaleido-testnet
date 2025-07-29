@@ -5,10 +5,10 @@ import chalk from 'chalk';
 export function createUI() {
   const screen = blessed.screen({
     smartCSR: true,
-    title: 'Kaleido Automation Bot',
+    title: 'Kaleido Testnet',
   });
 
-  const headerText = figlet.textSync('Kaleido BOT', { font: 'Doom' });
+  const headerText = figlet.textSync('Kaleido Testnet', { font: 'Def Leppard' });
   const header = blessed.box({
     parent: screen,
     top: 0,
