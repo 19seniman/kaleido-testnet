@@ -742,7 +742,7 @@ async function updateWalletData() {
 
   const screen = blessed.screen({
     smartCSR: true,
-    title: "KALEIDO TESTNET AUTO BOT",
+    title: "Automated transactions on Kaleido Testnet ",
     autoPadding: true,
     fullUnicode: true,
     mouse: true,
@@ -940,7 +940,7 @@ const configSubmitButton = blessed.button({
     setTimeout(() => {
       try {
         if (!isHeaderRendered) {
-          figlet.text("NT EXHAUST", { font: "ANSI Shadow" }, (err, data) => {
+          figlet.text("19Seniman", { font: "ANSI Shadow" }, (err, data) => {
             if (!err) headerBox.setContent(`{center}{bold}{cyan-fg}${data}{/cyan-fg}{/bold}{/center}`);
             isHeaderRendered = true;
           });
