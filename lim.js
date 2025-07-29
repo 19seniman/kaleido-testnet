@@ -940,7 +940,7 @@ const configSubmitButton = blessed.button({
     setTimeout(() => {
       try {
         if (!isHeaderRendered) {
-          figlet.text("19Seniman", { font: "ANSI Shadow" }, (err, data) => {
+          figlet.text("19Seniman", { font: "Doom" }, (err, data) => {
             if (!err) headerBox.setContent(`{center}{bold}{cyan-fg}${data}{/cyan-fg}{/bold}{/center}`);
             isHeaderRendered = true;
           });
