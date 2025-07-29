@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import logger from "./logger.js"; 
 import { createUI } from './ui.js';
 import blessed from "blessed";
