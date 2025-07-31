@@ -3,7 +3,7 @@
 🃏 Kaleido Finance Tesnet
 💳 Reward : Points
 
-➡️ Register : https://app.kaleidofinance.xyz (https://app.kaleidofinance.xyz/?referral=0xbC7DBA3885aD1A2f62c77E24AC985e9b7a5071ec)
+➡️ Register :https://app.kaleidofinance.xyz/?referral=0xbC7DBA3885aD1A2f62c77E24AC985e9b7a5071ec
 
 🔘 Connect Okx  Wallet ( wallet yang terkait sebelumnya ) & Get Test Funds
 
