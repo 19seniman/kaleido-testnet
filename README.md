@@ -22,3 +22,24 @@
 
 **EVM Address**  
 `0xf01fb9a6855f175d3f3e28e00fa617009c38ef59`
+
+
+
+## INSTALLATION
+
+```
+git clone https://github.com/19seniman/kaleido-testnet.git
+```
+```
+cd kaleido-testnet
+```
+```
+npm install
+```
+```
+nano .env
+```
+~ Run The scripts
+```
+node lim.js
+```
