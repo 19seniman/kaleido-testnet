@@ -6,9 +6,13 @@
 ➡️ Register : https://app.kaleidofinance.xyz (https://app.kaleidofinance.xyz/?referral=0xbC7DBA3885aD1A2f62c77E24AC985e9b7a5071ec)
 
 🔘 Connect Okx  Wallet ( wallet yang terkait sebelumnya ) & Get Test Funds
+
 🔘Bridge Sepolia ETH to Abstract ETH:  https://testnets.relay.link/bridge/abstract?
+
 🔘 Claim test USDR from Drako: https://www.drako.money/faucet
+
 🔘 Create Lending order
+
 🔘 Deposit Collateral Asset & Create Borrow
 🔘 Stake $KLD
 🔘 Click Profile and Connect Your X
